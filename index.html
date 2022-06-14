@@ -15,6 +15,7 @@
     <script type="text/javascript" src="javascript/leaflet-search-master/src/leaflet-search.js"></script>
     <script type="text/javacript"  src="javascript/leaflet-search-master/src/leaflet-search.mobile.css"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script type="text/javascript" src="node_modules/leaflet-rotate/dist/leaflet-rotate-src.js"></script>
     
     <!--leaflet stylesheet-->
     <link rel="stylesheet" href="javascript/leaflet/leaflet.css">
@@ -33,6 +34,7 @@
     <script src="mapdata/searrchdata.js"></script>
 
     <script type="text/javascript" src="mapdata/places.js"></script>
+    <script src="mapdata/placepoints.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 
@@ -40,6 +42,7 @@
 
 </head>
 <body>
+    
     <!--<button onclick="" class="buttonBlock1" id="LocBut"><img src="asset/R.png" width="20px"></button>-->
     <button onclick="openForm()" class="buttonBlock" id="DirectBut"><img src="asset/directions.png" width="23px"></button>
     <div class="formBlock" id="myForm">
@@ -50,21 +53,24 @@
 			<option value="a">Gate</option>
 			<option value="c">Library</option>
             <option value="f">BSIT Building</option>
+            <option value="m">CR(women)</option>
+            <option value="k">CR(men)</option>
             </select>
             <select id="to-end"  class="input">
             <option value="0">Select Destination</option>
             <option value="a">Gate</option>
             <option value="c">Library</option>
             <option value="f">BSIT Building</option>
+            <option value="m">CR(women)</option>
+            <option value="k">CR(men)</option>
             </select>
               <button id="clearmap" type="button" class="button2" onclick="resetDirect()">Reset</button>
             <button id="getshortestroute" type="button" class="button" onclick="direct()" >Get Directions</button>
         
         </form>
     </div>
-   <div id="map" ></div>
-   
-   
+   <div id="map"></div>
+ 
 </body>
 <script src="app.js"></script>
 </html>

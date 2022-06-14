@@ -1,7 +1,7 @@
 
 //map bounds
- var southWest = L.latLng(-14.25, -18.125),
- northEast = L.latLng(114, 110);
+ var southWest = L.latLng(-120, -120),
+ northEast = L.latLng(220, 220);
  bounds = L.latLngBounds(southWest, northEast);
 
 
@@ -11,7 +11,16 @@
     minZoom: 2,
     maxZoom: 20,
     zoomControl: false,
-    maxBounds: bounds
+    maxBounds: bounds,
+    rotate: true, 
+    touchRotate: false,
+    rotateControl: {
+      closeOnZeroBearing: false,
+      position: "topright",
+      
+    },
+    bearing: 0,
+
 
   });
 
@@ -96,17 +105,49 @@ function RouteIn()
     {
       pointss.push(placepoints[5])
     }
+    if(results[i] == "g")
+    {
+      pointss.push(placepoints[6])
+    }
+    if(results[i] == "h")
+    {
+      pointss.push(placepoints[7])
+    }
+    if(results[i] == "i")
+    {
+      pointss.push(placepoints[8])
+    }
+    if(results[i] == "j")
+    {
+      pointss.push(placepoints[9])
+    }
+    if(results[i] == "k")
+    {
+      pointss.push(placepoints[10])
+    }
+    if(results[i] == "l")
+    {
+      pointss.push(placepoints[11])
+    }
+    if(results[i] == "m")
+    {
+      pointss.push(placepoints[12])
+    }
+    if(results[i] == "n")
+    {
+      pointss.push(placepoints[13])
+    }
+    
   }
 }
 //directions
     
-placepoints = [[10, 31.3125],[15.953125, 31.3125],[15.953125, 47.375],[32.34375, 31.3125],[38.3125, 33.4375],[57.9375, 33.4375]]
 
     // the given points array
 
     let pointss = [];
 
-var mapdata = {a:{b:3},b:{a:2,c:1,d:3},c:{b:1},d:{e:1, b:3},e:{d:1,f:3},f:{e:3}},
+var mapdata = {a:{b:3},b:{a:2,c:1,d:3,g:1},c:{b:1},d:{e:1, b:3, i:1},e:{d:1,f:3,l:2.8},f:{l:1},g:{b:1,i:3,h:1},h:{g:1, j:3},i:{d:1, j:1},j:{k:0.5,h:3, i:1},k:{j:0.5},l:{f:1,m:0.3, e:2.8},m:{l:0.3}},
 			    graph = new Graph(mapdata);
 var polyline;
 var circle;
@@ -210,13 +251,13 @@ L.geoJSON(places, {
 }).addTo(map);
 
 
-/*$.getJSON('mapdata/places.geojson', function (geojson) {
+/*$.getJSON('mapdata/places.json', function (geojson) {
   L.geoJson(geojson, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup(feature.properties.popupContent);
     }
   }).addTo(map);
-});*/
+});
 
 
 
@@ -301,5 +342,4 @@ var labelLocation = new L.LatLng(19.40625, 47.4375);
         map.addLayer(labelTitle2);
     });
 */
-
 

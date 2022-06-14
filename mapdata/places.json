@@ -1,0 +1,29 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "name": "Library",
+            "amenity": "School Library",
+            "popupContent": "<h3 style='text-align:center;  margin-top: -10px'>LIBRARY</h3> <p style='text-align:center; margin-top: -15px;'><img src='asset/lib2.jpg' width='110' height='80'/>  <img src='asset/lib.jpg' width='110' height='80'/></p> <p style='margin-top: -10px;'>The CTU Tuburan Campus Library provides comprehensive resources and dynamic services to support the research, teaching and learning needs of the University.</p><a href='https://q68djtaefhtzoa7jjxwm8q-on.drv.tw/app-files-20211114T131956Z-001/app-files/' target='_blank' style=' padding: 5px; background: #1B3147; color: white; text-decoration: none; border-radius: 10px;'>Environment View</a>"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [470.5, 186]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "name": "BSIT Building",
+            "amenity": "IT Building",
+            "popupContent": "<h3 style='text-align:center;  margin-top: -10px'>BSIT Building</h3> <p style='text-align:center; margin-top: -15px;'><img src='' width='110' height='80'/>  <img src='' width='110' height='80'/></p> <p style='margin-top: -10px;'>The CTU Tuburan Campus Library provides comprehensive resources and dynamic services to support the research, teaching and learning needs of the University.</p><a href='https://q68djtaefhtzoa7jjxwm8q-on.drv.tw/app-files-20211114T131956Z-001/app-files/' target='_blank' style=' padding: 5px; background: #1B3147; color: white; text-decoration: none; border-radius: 10px;'>Environment View</a>"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [292, 605]
+        }
+      }
+    ]
+}
+
